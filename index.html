@@ -1,7 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
+  <style>/* ==========================================================
+   GOD'S AWE WORSHIP MINISTRIES MOVING ANNOUNCEMENT BAR
+========================================================== */
+
+.gawm-announcement-bar{
+    width:100%;
+    overflow:hidden;
+    margin:0 auto 20px;
+    padding:12px 0;
+    background:rgba(184,149,53,0.10);
+    border-top:1px solid rgba(184,149,53,0.4);
+    border-bottom:1px solid rgba(184,149,53,0.4);
+    border-radius:40px;
+    backdrop-filter:blur(5px);
+    position:relative;
+}
+
+.gawm-announcement-track{
+    display:inline-block;
+    white-space:nowrap;
+    padding-left:100%;
+    color:var(--ksf-gold);
+    font-size:0.95rem;
+    font-weight:700;
+    letter-spacing:0.8px;
+    text-transform:uppercase;
+    animation:gawmTicker 28s linear infinite;
+}
+
+.gawm-announcement-track:hover{
+    animation-play-state:paused;
+}
+
+@keyframes gawmTicker{
+    0%{
+        transform:translateX(0);
+    }
+    100%{
+        transform:translateX(-100%);
+    }
+}
+
+/* Mobile Devices */
+@media (max-width:768px){
+
+    .gawm-announcement-bar{
+        padding:10px 0;
+        margin-bottom:15px;
+    }
+
+    .gawm-announcement-track{
+        font-size:0.75rem;
+        animation-duration:20s;
+        letter-spacing:0.5px;
+    }
+}</style>
+=
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GOD'S AWE WORSHIP MINISTRIES | Home of Revival</title>
@@ -37,6 +93,14 @@
     </header>
 
     <section id="hero" class="ksf-hero">
+
+
+<div class="gawm-announcement-bar">
+    <div class="gawm-announcement-track">
+        God's Awe Worship Ministries • Revealing The Heart Of God • For More Information Contact Us Via 0119588623 • Email: godsaweworshipcenter@gmail.com • Welcome To Worship With Us • God's Awe Worship Ministries • Revealing The Heart Of God • For More Information Contact Us Via 0119588623 • Email: godsaweworshipcenter@gmail.com • Welcome To Worship With Us •
+    </div>
+</div>
+
         <div class="hero-inner-content text-center">
             <p class="hero-anchor-verse">WELCOME TO God’s Awe Worship Ministries</p>
             <h1>Revealing the <span class="text-gold">Heart of God</span></h1>
