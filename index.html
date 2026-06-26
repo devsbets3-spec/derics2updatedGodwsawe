@@ -57,7 +57,7 @@
         letter-spacing:0.5px;
     }
 }</style>
-=
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GOD'S AWE WORSHIP MINISTRIES | Home of Revival</title>
@@ -80,6 +80,8 @@
                 <a href="#about">About Us</a>
                 <a href="#faith">Statement of Faith</a>
                 <a href="#departments">Departments</a>
+                 <a href="#offering">Offerings and Giving</a>
+                 <a href="#gallery">Gallery</a>
                 <a href="#campuses">Campuses</a>
                 <a href="#contact">Contact</a>
                 <div class="nav-social-cluster" style="display: inline-flex; gap: 12px; align-items: center; margin-right: 10px;">
@@ -393,10 +395,256 @@
             </div>
         </div>
     </section>
+    /* Premium Cgallery */
+
+    <section id="gallery">
+        <style>/*==========================
+        GALLERY
+==========================*/
+
+.gallery-section{
+
+padding:100px 20px;
+
+background:#f8f9fc;
+
+}
+
+.gallery-container{
+
+max-width:1200px;
+
+margin:auto;
+
+text-align:center;
+
+}
+
+.gallery-badge{
+
+display:inline-block;
+
+padding:10px 24px;
+
+background:rgba(184,149,53,.15);
+
+color:var(--ksf-gold);
+
+border-radius:50px;
+
+font-weight:700;
+
+text-transform:uppercase;
+
+letter-spacing:1px;
+
+margin-bottom:20px;
+
+}
+
+.gallery-container h2{
+
+font-size:3rem;
+
+color:var(--ksf-dark-base);
+
+margin-bottom:15px;
+
+}
+
+.gallery-divider{
+
+width:90px;
+
+height:4px;
+
+background:var(--ksf-gold);
+
+margin:20px auto;
+
+border-radius:10px;
+
+}
+
+.gallery-description{
+
+max-width:700px;
+
+margin:auto;
+
+color:#666;
+
+line-height:1.8;
+
+margin-bottom:60px;
+
+}
+
+.gallery-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:30px;
+
+}
+
+.gallery-card{
+
+position:relative;
+
+overflow:hidden;
+
+border-radius:20px;
+
+cursor:pointer;
+
+box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+transition:.4s;
+
+}
+
+.gallery-card img{
+
+width:100%;
+
+height:320px;
+
+object-fit:cover;
+
+display:block;
+
+transition:.6s;
+
+}
+
+.gallery-card:hover img{
+
+transform:scale(1.08);
+
+}
+
+.gallery-overlay{
+
+position:absolute;
+
+left:0;
+
+right:0;
+
+bottom:0;
+
+padding:25px;
+
+background:linear-gradient(to top,rgba(0,0,0,.8),transparent);
+
+color:#fff;
+
+opacity:0;
+
+transition:.4s;
+
+}
+
+.gallery-card:hover .gallery-overlay{
+
+opacity:1;
+
+}
+
+.gallery-overlay h3{
+
+font-size:1.4rem;
+
+}
+
+.gallery-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+@media(max-width:768px){
+
+.gallery-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.gallery-container h2{
+
+font-size:2.2rem;
+
+}
+
+.gallery-card img{
+
+height:250px;
+
+}
+
+}</style>
+<section id="gallery" class="gallery-section">
+
+    <div class="gallery-container">
+
+        <span class="gallery-badge">
+            Moments of Worship
+        </span>
+
+        <h2>Church Gallery</h2>
+
+        <div class="gallery-divider"></div>
+
+        <p class="gallery-description">
+            Experience the life of God's Awe Worship Ministries through these
+            memorable moments of worship, fellowship, outreach, conferences,
+            and special events.
+        </p>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-card">
+                <img src="images/gallery1.jpg" alt="Sunday Worship Service">
+                <div class="gallery-overlay">
+                    <h3>Sunday Worship</h3>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <img src="images/gallery2.jpg" alt="Prayer Service">
+                <div class="gallery-overlay">
+                    <h3>Prayer & Fellowship</h3>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <img src="images/gallery3.jpg" alt="Youth Ministry">
+                <div class="gallery-overlay">
+                    <h3>Youth Ministry</h3>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <img src="images/gallery4.jpg" alt="Community Outreach">
+                <div class="gallery-overlay">
+                    <h3>Community Outreach</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    </section>
 
  <section id="campuses" class="section-pad bg-dark-deep color-white">
 
-   ```html
+   
 <section id="campuses" class="section-pad bg-dark-deep color-white">
 
 <style>
@@ -665,7 +913,7 @@
     <div class="ksf-modal-window campus-modal">
 
         <span class="ksf-modal-dismiss"
-              onclick="closeModal('modal-campus-athi')">&times;</span>
+              onclick="closeModal('modal-campus-athi')">&times</span>
 
         <div class="campus-header">
             <i class="fa-solid fa-location-dot"></i>
@@ -746,8 +994,562 @@ window.addEventListener('keydown', function(event) {
 </script>
 
 </section>
-```
+<section id="offering">
+<!-- TITHES AND OFFERING -->
 
+
+
+<section id="offering" class="giving-section">
+
+
+    <div class="giving-container">
+/* ===========================================
+   TITHES & OFFERINGS
+===========================================*/
+<style>
+.giving-section{
+    padding:100px 20px;
+    background:linear-gradient(135deg,#08111f,#0f1d32);
+}
+
+.giving-container{
+    max-width:1100px;
+    margin:auto;
+    text-align:center;
+}
+
+.giving-badge{
+    display:inline-block;
+    padding:10px 22px;
+    background:rgba(184,149,53,.15);
+    color:var(--ksf-gold);
+    border:1px solid rgba(184,149,53,.35);
+    border-radius:50px;
+    font-size:.85rem;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    margin-bottom:20px;
+}
+
+.giving-container h2{
+    font-size:3rem;
+    color:#fff;
+    margin-bottom:10px;
+}
+
+.giving-subtitle{
+    color:#d1d5db;
+    font-size:1.1rem;
+    margin-bottom:30px;
+}
+
+.giving-verse{
+    max-width:750px;
+    margin:0 auto 60px;
+    color:#cbd5e1;
+    font-style:italic;
+    line-height:1.8;
+    border-left:4px solid var(--ksf-gold);
+    padding-left:20px;
+}
+
+/* Card */
+
+.giving-card{
+
+    max-width:650px;
+
+    margin:auto;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:25px;
+
+    padding:45px;
+
+    box-shadow:0 25px 50px rgba(0,0,0,.35);
+
+    transition:.4s;
+}
+
+.giving-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.payment-icon{
+
+    width:90px;
+
+    height:90px;
+
+    margin:auto;
+
+    margin-bottom:25px;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#b89535,#f2d17b);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:2.2rem;
+
+    color:white;
+
+    box-shadow:0 15px 30px rgba(184,149,53,.45);
+
+}
+
+.giving-card h3{
+
+    color:white;
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+
+}
+
+.giving-number{
+
+    font-size:2.8rem;
+
+    font-weight:800;
+
+    letter-spacing:3px;
+
+    color:var(--ksf-gold);
+
+    margin:30px 0;
+
+}
+
+.copy-btn{
+
+    background:var(--ksf-gold);
+
+    color:#fff;
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.copy-btn:hover{
+
+    background:#d6ae45;
+
+    transform:scale(1.05);
+
+}
+
+#copyMessage{
+
+    margin-top:15px;
+
+    color:#6ee7b7;
+
+    font-weight:700;
+
+}
+
+.giving-card hr{
+
+    margin:40px 0;
+
+    border:none;
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+}
+
+.giving-card h4{
+
+    color:var(--ksf-gold);
+
+    margin-bottom:15px;
+
+}
+
+.giving-card p{
+
+    color:#d1d5db;
+
+    line-height:1.8;
+
+}
+
+/* Ministry Impact */
+
+.impact-section{
+
+    margin-top:80px;
+
+}
+
+.impact-section h3{
+
+    color:#fff;
+
+    margin-bottom:40px;
+
+    font-size:2rem;
+
+}
+
+.impact-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+.impact-box{
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:18px;
+
+    padding:30px;
+
+    transition:.35s;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.impact-box:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--ksf-gold);
+
+}
+
+.impact-box i{
+
+    font-size:2rem;
+
+    color:var(--ksf-gold);
+
+    margin-bottom:15px;
+
+}
+
+.impact-box span{
+
+    display:block;
+
+    color:white;
+
+    font-weight:700;
+
+}
+
+/* Thank You */
+
+.thank-you-box{
+
+    margin-top:80px;
+
+    padding:45px;
+
+    border-radius:25px;
+
+    background:rgba(184,149,53,.12);
+
+    border:1px solid rgba(184,149,53,.25);
+
+}
+
+.thank-you-box h3{
+
+    color:white;
+
+    margin-bottom:20px;
+
+    font-size:2rem;
+
+}
+
+.thank-you-box p{
+
+    color:#d1d5db;
+
+    line-height:1.8;
+
+}
+
+.cta{
+
+    color:var(--ksf-gold);
+
+    margin-top:20px;
+
+    font-size:1.1rem;
+
+}
+
+/* Contact */
+
+.giving-contact{
+
+    margin-top:60px;
+
+}
+
+.giving-contact h4{
+
+    color:white;
+
+    margin-bottom:20px;
+
+}
+
+.giving-contact p{
+
+    color:#d1d5db;
+
+    font-size:1rem;
+
+    margin:8px 0;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.giving-container h2{
+
+font-size:2.2rem;
+
+}
+
+.giving-card{
+
+padding:30px 20px;
+
+}
+
+.giving-number{
+
+font-size:2rem;
+
+letter-spacing:1px;
+
+}
+
+.payment-icon{
+
+width:70px;
+
+height:70px;
+
+font-size:1.8rem;
+
+}
+
+.impact-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}</style>
+        <span class="giving-badge">
+            💝 Worship Through Giving
+        </span>
+
+        <h2>Tithes & Offerings</h2>
+
+        <p class="giving-subtitle">
+            Honoring God Through Faithful Giving
+        </p>
+
+        <blockquote class="giving-verse">
+            "Each of you should give what you have decided in your heart to give,
+            not reluctantly or under compulsion, for God loves a cheerful giver."
+            <br>
+            <strong>— 2 Corinthians 9:7</strong>
+        </blockquote>
+
+        <div class="giving-card">
+
+            <div class="payment-icon">
+                <i class="fas fa-hand-holding-heart"></i>
+            </div>
+
+            <h3>Send via Zelle / Cash App</h3>
+
+            <div class="giving-number" id="givingNumber">
+                325 2712 983
+            </div>
+
+            <button class="copy-btn" onclick="copyGivingNumber()">
+                <i class="far fa-copy"></i>
+                Copy Number
+            </button>
+
+            <p id="copyMessage"></p>
+
+            <hr>
+
+            <h4>Why We Give</h4>
+
+            <p>
+                Tithes and offerings are acts of worship, gratitude,
+                obedience and faith. Through faithful giving we partner
+                together in advancing God's Kingdom and sharing the Gospel
+                with the world.
+            </p>
+
+        </div>
+
+        <div class="impact-section">
+
+            <h3>Your Giving Supports</h3>
+
+            <div class="impact-grid">
+
+                <div class="impact-box">
+                    <i class="fas fa-cross"></i>
+                    <span>Evangelism</span>
+                </div>
+
+                <div class="impact-box">
+                    <i class="fas fa-church"></i>
+                    <span>Worship Services</span>
+                </div>
+
+                <div class="impact-box">
+                    <i class="fas fa-book-bible"></i>
+                    <span>Discipleship</span>
+                </div>
+
+                <div class="impact-box">
+                    <i class="fas fa-children"></i>
+                    <span>Children's Ministry</span>
+                </div>
+
+                <div class="impact-box">
+                    <i class="fas fa-users"></i>
+                    <span>Youth Ministry</span>
+                </div>
+
+                <div class="impact-box">
+                    <i class="fas fa-earth-americas"></i>
+                    <span>Missions</span>
+                </div>
+
+                <div class="impact-box">
+                    <i class="fas fa-handshake"></i>
+                    <span>Community Outreach</span>
+                </div>
+
+                <div class="impact-box">
+                    <i class="fas fa-heart"></i>
+                    <span>Helping Those in Need</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="thank-you-box">
+
+            <h3>Thank You!</h3>
+
+            <p>
+                Your generosity enables God's Awe Worship Ministries to
+                continue proclaiming the Gospel, discipling believers,
+                serving communities and transforming lives through Christ.
+            </p>
+
+            <p class="cta">
+                <strong>
+                    Thank you for partnering with us in God's work.
+                    May the Lord richly bless you!
+                </strong>
+            </p>
+
+        </div>
+
+        <div class="giving-contact">
+
+            <h4>Need Help With Giving?</h4>
+
+            <p>
+                📞 +254 119 588 623
+            </p>
+
+            <p>
+                ✉️ godsaweworshipcenter@gmail.com
+            </p>
+
+        </div>
+
+    </div>
+<script>function copyGivingNumber(){
+
+    const number = "3252712983";
+
+    navigator.clipboard.writeText(number);
+
+    const msg = document.getElementById("copyMessage");
+
+    msg.innerHTML = "✓ Giving number copied successfully!";
+
+    setTimeout(function(){
+
+        msg.innerHTML = "";
+
+    },3000);
+
+}</script>
+</section>
+
+
+
+
+
+        
+
+
+    
+
+                
+
+
+
+</section>
     <section id="contact" class="section-pad bg-light-muted">
         <div class="block-container grid-split-leadership items-center">
             <div>
@@ -1018,7 +1820,8 @@ document.addEventListener("keydown", function(event) {
             modal.classList.remove("active");
         });
     }
-});</script>
+});
+</script>
 
 
 
