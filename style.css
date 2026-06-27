@@ -1,28 +1,6 @@
  /* mobile/* mobile
 /* Mobile */
-@media (max-width: 768px){
 
-    .hero-button-cluster{
-        flex-direction:column;
-        align-items:center;
-        width:100%;
-    }
-
-    .hero-button-cluster a,
-    .hero-button-cluster button{
-
-        width:100%;
-        max-width:320px;
-
-        display:flex;
-        justify-content:center;
-        align-items:center;
-
-        padding:15px 20px;
-        font-size:16px;
-    }
-
-}*/
 :root {
     /* Exact Palette Extracted From The Logo */
     --ksf-blue-dark: #1a365d;        /* Deep Royal Blue from logo text */
@@ -199,3 +177,26 @@ body { font-family: var(--ksf-font-stack); background-color: var(--ksf-pure-whit
     .ksf-hero h1 { font-size: 2.2rem; }
     .ksf-logo { font-size: 1.2rem; gap: 10px; }
 }
+@media (max-width: 768px){
+
+    .hero-button-cluster{
+        flex-direction:column;
+        align-items:center;
+        width:100%;
+    }
+
+    .hero-button-cluster a,
+    .hero-button-cluster button{
+
+        width:100%;
+        max-width:320px;
+
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        padding:15px 20px;
+        font-size:16px;
+    }
+
+}*/
