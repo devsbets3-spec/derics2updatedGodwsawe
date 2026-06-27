@@ -169,6 +169,14 @@ body { font-family: var(--ksf-font-stack); background-color: var(--ksf-pure-whit
 .info-packet h5 { font-size: 1rem; margin-bottom: 4px; font-weight: 700; color: var(--ksf-blue-dark); }
 .info-packet p { font-size: 0.88rem; color: var(--ksf-text-gray); }
 
+.hero-button-cluster{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:30px;
+}
 /* Responsive Media Queries */
 @media(max-width: 820px) {
     .grid-split-leadership { grid-template-columns: 1fr; gap: 40px; }
