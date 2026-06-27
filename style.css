@@ -111,6 +111,318 @@ body { font-family: var(--ksf-font-stack); background-color: var(--ksf-pure-whit
 .ksf-divider-left { width: 50px; height: 4px; background-color: var(--ksf-gold); margin: 15px 0; border-radius: 2px; }
 
 /* About Section */
+/*====================================================
+ABOUT SECTION REDESIGN
+God's Awe Worship Ministries
+====================================================*/
+
+.about-introduction{
+    max-width:1000px;
+    margin:50px auto 0;
+}
+
+.about-introduction p{
+    font-size:1rem;
+    line-height:1.9;
+    color:var(--ksf-text-gray);
+    margin-bottom:20px;
+}
+
+.about-introduction .emphasized-text{
+    font-size:1.15rem;
+    font-weight:600;
+    color:var(--ksf-blue-dark);
+}
+
+/* Quote */
+
+.signature-quote-box{
+
+    background:linear-gradient(135deg,#fcf8ef,#ffffff);
+
+    border-left:5px solid var(--ksf-gold);
+
+    padding:30px;
+
+    margin:35px 0;
+
+    border-radius:12px;
+
+    box-shadow:var(--ksf-shadow);
+
+    position:relative;
+
+}
+
+.signature-quote-box::before{
+
+    content:"❝";
+
+    position:absolute;
+
+    top:-15px;
+
+    left:20px;
+
+    font-size:4rem;
+
+    color:rgba(204,164,59,.15);
+
+    font-family:serif;
+
+}
+
+.signature-quote-box p{
+
+    margin:0;
+
+    font-style:italic;
+
+    color:var(--ksf-text-dark);
+
+    line-height:1.8;
+
+}
+
+/* Section spacing */
+
+.section-space{
+
+    margin-top:80px;
+
+}
+
+/* Card Grid */
+
+.about-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    margin-top:45px;
+
+}
+
+/* Cards */
+
+.about-card{
+
+    background:#fff;
+
+    padding:35px 30px;
+
+    border-radius:16px;
+
+    border:1px solid var(--ksf-border-color);
+
+    box-shadow:var(--ksf-shadow);
+
+    transition:all .35s ease;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.about-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:5px;
+
+    height:100%;
+
+    background:var(--ksf-gold);
+
+}
+
+.about-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--ksf-gold);
+
+    box-shadow:0 20px 45px rgba(15,30,51,.15);
+
+}
+
+/* Icons */
+
+.about-card i{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:28px;
+
+    background:var(--ksf-blue-dark);
+
+    color:var(--ksf-gold);
+
+    margin-bottom:25px;
+
+    transition:.35s;
+
+}
+
+.about-card:hover i{
+
+    transform:rotate(360deg);
+
+    background:var(--ksf-gold);
+
+    color:var(--ksf-blue-dark);
+
+}
+
+/* Headings */
+
+.about-card h4{
+
+    color:var(--ksf-blue-dark);
+
+    font-size:1.2rem;
+
+    font-weight:800;
+
+    margin-bottom:15px;
+
+}
+
+/* Paragraphs */
+
+.about-card p{
+
+    color:var(--ksf-text-gray);
+
+    line-height:1.8;
+
+    margin:0;
+
+}
+
+/* Section Titles */
+
+#about h2{
+
+    font-size:2.4rem;
+
+    color:var(--ksf-blue-dark);
+
+    margin-top:10px;
+
+    margin-bottom:15px;
+
+    font-weight:800;
+
+}
+
+#about .ksf-section-badge{
+
+    font-size:.85rem;
+
+    color:var(--ksf-gold);
+
+    letter-spacing:2px;
+
+}
+
+/* Divider */
+
+#about .ksf-divider-center{
+
+    margin-bottom:30px;
+
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+    .about-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .about-introduction{
+
+        margin-top:30px;
+
+    }
+
+    .about-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    #about h2{
+
+        font-size:2rem;
+
+    }
+
+    .about-card{
+
+        padding:28px 22px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    #about h2{
+
+        font-size:1.8rem;
+
+    }
+
+    .about-introduction p{
+
+        font-size:.96rem;
+
+    }
+
+    .about-card{
+
+        text-align:center;
+
+    }
+
+    .about-card i{
+
+        margin:0 auto 20px;
+
+    }
+
+}
+/* About Section */
+
 .grid-split-leadership { display: grid; grid-template-columns: 1fr 1.1fr; gap: 50px; }
 .leader-image-frame { position: relative; width: 100%; min-height: 350px; background: var(--ksf-bg-soft); border-radius: 6px; border: 1px solid var(--ksf-border-color); display: flex; align-items: center; justify-content: center; padding: 30px; }
 .emphasized-text { font-size: 1.15rem; color: var(--ksf-blue-dark); font-weight: 600; margin-bottom: 15px; }
